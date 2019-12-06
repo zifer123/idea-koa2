@@ -8,12 +8,14 @@ const { isDev, isProd } = require('../utils/env');
 const REDIS_CONF = {
   port: 6379,
   host: '127.0.0.1',
+  password: 'zZ1046717797',
 };
 
 if (isProd) {
   // 生产：redis配置
   REDIS_CONF.port = 6378;
   REDIS_CONF.host = '111.230.172.203';
+  REDIS_CONF.password = 'zZ1046717797';
 
   // 生产：
 }

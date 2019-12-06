@@ -40,6 +40,7 @@ app.use(session({
   // ttl: 24 * 60 * 60 * 1000, // session存到redis的存储过期时间（到期删掉）， 默认跟maxAge时间一样
   store: redisStore({
     all: `${REDIS_CONF.host}:${REDIS_CONF.port}`,
+    password: REDIS_CONF.password,
   }),
 }));
 
