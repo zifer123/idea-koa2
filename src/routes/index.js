@@ -20,4 +20,10 @@ router.get('/json', async (ctx, next) => {
   }
 });
 
+router.get('/jsonData', async (ctx, next) => {
+  ctx.body = {
+    code: 200,
+  };
+});
+
 module.exports = router;

@@ -1,3 +1,7 @@
+/**
+ * @Author zifer
+ * @Description 测试用例demo
+ * */
 function sum (a, b) {
   return a + b;
 }
